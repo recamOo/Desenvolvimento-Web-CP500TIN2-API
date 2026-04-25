@@ -5,8 +5,9 @@ const app = express();
 app.use(cors());
 
 app.get('/', (req, res) => {
-    res.json({ message: 'Hello, World!', 
-    date: new Date().toLocaleDateString('pt-BR')
+    res.json({ 
+    data: new Date().toLocaleDateString('pt-BR'),
+    hora: new Date().toLocaleTimeString('pt-BR')
     });
 });
 
