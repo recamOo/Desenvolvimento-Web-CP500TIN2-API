@@ -4,7 +4,7 @@ const app = express();
 
 app.use(cors());
 
-app.get('/', (req, res) => {
+app.get('/API', (req, res) => {
     res.send('Hello World!');
 });
 
